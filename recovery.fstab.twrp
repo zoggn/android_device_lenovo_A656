@@ -1,0 +1,12 @@
+/boot		emmc		/dev/bootimg
+/cache		ext4		/emmc@cache
+/data		ext4		/emmc@usrdata
+/misc		emmc		/dev/misc
+/recovery	emmc		/dev/recovery
+/system		ext4		/emmc@android
+/preload	ext4		/emmc@preload		flags=display="Preload";backup=1;wipeingui
+/sdcard		vfat		/dev/block/mmcblk1p1	/dev/block/mmcblk1	flags=display="External SD-card";storage;wipeingui;removable
+/usb-otg	vfat		/dev/block/sda1		/dev/block/sda		flags=display="USB-OTG";storage;wipeingui;removable
+/nvram		emmc		/dev/nvram		flags=display="Nvram";backup=1
+/uboot		emmc		/dev/uboot		flags=display="Uboot";backup=1
+/logo		emmc		/dev/logo		flags=display="Boot Logo";backup=1
